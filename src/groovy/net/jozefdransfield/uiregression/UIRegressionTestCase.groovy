@@ -106,4 +106,8 @@ public class UIRegressionTestCase extends SeleneseTestCase {
     return BuildSettingsHolder.getSettings().config.uiregression.result.path + "/${screenShotName}/"
   }
 
+  public void tearDown() {
+    selenium.stop()
+  }
+
 }
